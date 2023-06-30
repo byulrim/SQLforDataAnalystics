@@ -38,6 +38,8 @@ as (
 		from product p 
 		inner join sales s 
 			on p.product_code = s.product_code
+		where 
+			2020 = year(s.order_date)
 		group by 
 			s.mem_no
 		) dirived_s
