@@ -74,3 +74,31 @@ select
 	*
 from re_pur_cycle
 ;
+
+select 
+	*
+from sales s 
+where mem_no = 1000021
+;
+
+/*
+# order_no, mem_no, order_date, product_code, sales_qty
+'3', '1000021', '2019-05-07', '494', '2'
+'44', '1000021', '2019-05-16', '30', '11'
+'61', '1000021', '2019-05-21', '494', '16'
+*/
+
+select 
+	*
+from sales s 
+where mem_no = 1000021
+;
+
+show tables;
+
+select 
+	*
+from re_pur_cycle
+where mem_no = 1000021
+;
+
